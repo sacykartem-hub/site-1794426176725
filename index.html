@@ -1,0 +1,166 @@
+```html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Shopping</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+        .hero {
+            position: relative;
+            background: linear-gradient(to bottom, #2e353d, #1c1c1c);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin: 0;
+        }
+        .about {
+            background: #1c1c1c;
+            padding: 4rem;
+            text-align: center;
+        }
+        .about p {
+            font-size: 1.2rem;
+        }
+        .services {
+            background: #2e353d;
+            padding: 4rem 0;
+        }
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .service-item img {
+            width: 50px;
+        }
+        .service-item h3 {
+            font-size: 1.5rem;
+        }
+        .portfolio {
+            background: #1c1c1c;
+            padding: 4rem 0;
+        }
+        .project-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .project-item img {
+            width: 150px;
+        }
+        .contact {
+            background: #2e353d;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .contact button {
+            background: #e74c3c;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            background: #1c1c1c;
+            color: #ffffff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero, .about, .services, .portfolio, .contact {
+                padding: 2rem;
+            }
+            .hero h1, .service-item h3 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Drop Shopping</h1>
+    </header>
+    <section class="about">
+        <h2>O nas</h2>
+        <p>Nasza firma specjalizuje się w oferowaniu najlepszych produktów i usług na rynku dropshippingu.</p>
+    </section>
+    <section class="services">
+        <h2>Nasza Oferta</h2>
+        <div class="service-item">
+            <img src="https://images.unsplash.com/photo-1612316841827-9e55d8a7a767?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFjdGljYW50JTIwcGFyYW16fGVufDB8fDB8&auto=format&fit=crop&w=500&q=60" alt="Usługa 1">
+            <div>
+                <h3>Usługa 1</h3>
+                <p>Opis usługi 1.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://images.unsplash.com/photo-1554755364-7956c10c643a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFjdGljYW50JTIwcGFyYW16fGVufDB8fDB8&auto=format&fit=crop&w=500&q=60" alt="Usługa 2">
+            <div>
+                <h3>Usługa 2</h3>
+                <p>Opis usługi 2.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://images.unsplash.com/photo-1559127232-03b0010e0f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFjdGljYW50JTIwcGFyYW16fGVufDB8fDB8&auto=format&fit=crop&w=500&q=60" alt="Usługa 3">
+            <div>
+                <h3>Usługa 3</h3>
+                <p>Opis usługi 3.</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project-item">
+            <img src="https://images.unsplash.com/photo-1548239554-e2f890e5ae4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGF5bWVudHxlbnwwfHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="Projekt 1">
+            <div>
+                <h3>Projekt 1</h3>
+                <p>Opis projektu 1.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <img src="https://images.unsplash.com/photo-1525061342168-797a8146c55c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGF5bWVudHxlbnwwfHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="Projekt 2">
+            <div>
+                <h3>Projekt 2</h3>
+                <p>Opis projektu 2.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <input type="text" placeholder="Twoje imię" required>
+            <input type="email" placeholder="Twój e-mail" required>
+            <textarea placeholder="Twoje wiadomość" required></textarea>
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2023 Drop Shopping. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
+```
